@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="./main.css">
+        <title>TripNest</title>
+
+        <link rel="stylesheet" href="/header.css">
+        <link rel="stylesheet" href="/general.css">
+        <link rel="stylesheet" href="/main.css">
+       
     </head>
     <body>
-        <a id="navLink" href="./bye.html">Bye</a>
-        <p>
-            Hi
-        </p>
+        <header>
+            <nav class="leftNav">
+                <img class="logo" src="/Black and White Circular Art & Design Logo.png">
+                 <H3>TRIPNET</H2>   
+            </nav>
+            <nav class="centerNav">
+                <a id="navLink" href="/index.html">Home</a>
+                <a id="navLink" href="/travel_recommendation_aboutus.html">About Us</a>
+                <a id="navLink" href="/travel_recommendation_contactus.html">Contact Us</a>
+            </nav>
+
+
+            <nav class="rightNav">
+                <div class="searchContainer">
+                    <input class="searchBar" id="search-bar" type="text" placeholder="Search">
+                    <div class="searchButtonContainer">
+                        <button class="searchButton" >Search</button>
+                        <button class="resetButton">Reset</button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="mainContainer">
+                <img class="mainImage" src="/neom-eOWabmCNEdg-unsplash.jpg" >
+                <div class="mainText">
+                    <h2>Dream</h2>
+                    <h2>Plan</h2>
+                    <h2>Travel</h2>
+
+                    <p class="mainP">Your perfect getaway starts here—find top destinations and hidden gems with TripNest.</p> <br>
+                    <div class="subP">
+                        <p>An ultimate travel companion for discovering the world's best destinations. Whether you're looking for a relaxing getaway, an adventurous escape, or a hidden gem off the beaten path, TripNest helps you find and plan the perfect trip with ease.
+                        </p>
+                        <p>
+                            Start your adventure today—search for destinations, get inspired, and let TripNest guide you to your next great travel experience!
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+        <div id="recommendations-container"></div>
+        <script src="/travelRecommendation/travel_recommendation.js"></script>
     </body>
 </html>
