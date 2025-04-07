@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="./header.css">
         <link rel="stylesheet" href="./general.css">
         <link rel="stylesheet" href="./main.css">
+        <link rel="stylesheet" href="./flexbox.css">
        
     </head>
     <body>
@@ -32,24 +33,27 @@
             </nav>
         </header>
         <main>
-            <div class="mainContainer">
-                <img class="mainImage" src="/neom-eOWabmCNEdg-unsplash.jpg" >
+            <img class="mainImage" src="/neom-eOWabmCNEdg-unsplash.jpg" >
                 <div class="mainText">
-                    <h2>Dream</h2>
-                    <h2>Plan</h2>
-                    <h2>Travel</h2>
+                    <div class="mainTextChild1">
+                        <h1>Dream&nbsp;&nbsp; Plan&nbsp;&nbsp; Travel</h1>
 
-                    <p class="mainP">Your perfect getaway starts here—find top destinations and hidden gems with TripNest.</p> <br>
-                    <div class="subP">
+                        
                         <p>An ultimate travel companion for discovering the world's best destinations. Whether you're looking for a relaxing getaway, an adventurous escape, or a hidden gem off the beaten path, TripNest helps you find and plan the perfect trip with ease.
                         </p>
-                        <p>
-                            Start your adventure today—search for destinations, get inspired, and let TripNest guide you to your next great travel experience!
-                        </p>
                     </div>
+
+                    <div class="mainTextChild2">
+                        
+                        <p>
+                            Start your adventure today—search for destinations, get inspired, <br> and let TripNest guide you to your next great travel experience!
+                        </p>
+
+                    </div>
+                       
                 </div>
                 
-            </div>
+                
         </main>
         <div id="recommendations-container"></div>
         <script src="/travelRecommendation/travel_recommendation.js"></script>

@@ -1,84 +1,85 @@
 body{
     background-color: #ffffff;
     margin: 0;
+    overflow: hidden; /* Prevent scrolling */
 }
 
-.mainContainer{
-position: relative;
-display: inline-block;
+main {
+    display: grid;
+    position: relative; 
+    
+   
+
+}
+.mainText {
+    /* Styling to make this countainer inhabit the same cell as
+    the other item in main. But with z-index it will show on top. */
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 1;
+
+    /* makes this container a flex box in order to organize the page text
+    the way i want */
+    display: flex;
+    flex-direction: column;
+    
+   /* attribute used with flex box to align the items in this container
+   horizontally */
+    align-items: center;
+
+    
+
+   
+}
+
+.mainTextChild1,
+.mainTextChild2 {
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Adds a background for readability */
+    padding: 10px 20px;
+    border-radius: 50px;
+
+    font-size: 16px;
+
+    
+   
+}
+
+.mainTextChild1{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55%;
+    
+}
+
+.mainTextChild1 h1 {
+    font-size: 60px;
+    margin-top: 10px;
+}
+
+.mainTextChild2{
+    margin-top: 20px;
 }
 
 .mainImage{
+    grid-row: 1;
+    grid-column: 1;
+
+    /* Used to get the image to incompass the whole width of the webpage */
     width: 100%;
+ 
+    object-fit: cover;
+    display: block;
 }
 
 
-.mainText{
-    position: absolute;
-    top: 30%;
-    left: 35%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 20px;
-    background: rgba(0, 0, 0, 0.5); /* Optional: Adds a background for readability */
-    padding: 10px 20px;
-    border-radius: 5px;
-}
 
-.subP{
-    position: absolute;
-    top: 180%;
-    left: 27%;
-    right: 18%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 20px;
-    background: rgba(0, 0, 0, 0.5); /* Optional: Adds a background for readability */
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-.mainText h2{
-    margin: 5px 0;
-    font-size: 54px;
-}
 
 /*styling the recommendations*/
 
-#recommendations-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
-    gap: 20px;
-    padding: 20px;
-  }
-  
-  /* Styling for each recommendation item */
-  
-  
-/* Pop-up Recommendations Container */
-#recommendations-container {
-    position: absolute;
-    top: 70px;  /* Place it below the search bar */
-    left: 50%;
-    transform: translateX(-50%);  /* Center it horizontally */
-    width: 80%;
-    max-width: 600px;
-    background-color: white;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    z-index: 10;
-    display: none; /* Hide by default */
-  }
-  /* Container for Recommendations */
-#recommendations-container {
-  display: block;  /* Make sure it's visible */
-  padding: 20px;
-  margin-top: 10px;
-  background-color: #f8f8f8;
-  max-width: 800px;
-  margin: 20px auto;
-}
+
 
 /* Ensure temple and beach items are visible */
 .temple, .beach {

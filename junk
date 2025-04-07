@@ -1,0 +1,36 @@
+#recommendations-container {
+    display: block;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Styling for each recommendation item */
+  
+  
+/* Pop-up Recommendations Container */
+#recommendations-container {
+    position: absolute;
+    top: 70px;  /* Place it below the search bar */
+    left: 50%;
+    transform: translateX(-50%);  /* Center it horizontally */
+    width: 80%;
+    max-width: 600px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 10;
+    display: none; /* Hide by default */
+  }
+  /* Container for Recommendations */
+#recommendations-container {
+  display: block;  /* Make sure it's visible */
+  padding: 20px;
+  margin-top: 10px;
+  background-color: #f8f8f8;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+
