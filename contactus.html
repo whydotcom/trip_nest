@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="./main.css">
        
     </head>
-    <body>
+    <body id="contactus">
         <header>
             <nav class="leftNav">
                 <img class="logo" src="/Black and White Circular Art & Design Logo.png">
@@ -25,25 +25,26 @@
         
         </header>
         <main>
-            <div class="mainContainer">
-                
-                <img class="mainImage" src="/philipp-kammerer-6Mxb_mZ_Q8E-unsplash.jpg" >
-                
-                
-            </div>
-            
-            <h1 class="contactusH1">CONTACT US</h1>
+            <img class="mainImage" src="/philipp-kammerer-6Mxb_mZ_Q8E-unsplash.jpg" >
+            <div class="mainText">
+                <div class="mainTextChild1">
+                    <h1>CONTACT US</h1>
+                </div>
 
-            <div class="contactField">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" placeholder="Your Name" required><br>
+                <div class="mainTextChild2">
+                    
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" placeholder="Your Name" required><br>
+    
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" placeholder="Your Email" required><br>
+    
+                    <label for="messageText">Message:</label><br>
+                    <textarea id="messageText" rows="5" cols="30" placeholder="Enter your message here" required></textarea><br>
+                    <button class="contactSubmitButton">submit</button>
 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" placeholder="Your Email" required><br>
-
-                <label for="messageText">Message:</label><br>
-                <textarea id="messageText" rows="5" cols="30" placeholder="Enter your message here" required></textarea><br>
-                <button class="contactSubmitButton">submit</button>
+                </div>
+                   
             </div>
 
         </main>

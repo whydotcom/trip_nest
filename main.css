@@ -27,8 +27,6 @@ main {
    horizontally */
     align-items: center;
 
-    
-
    
 }
 
@@ -70,12 +68,45 @@ main {
     /* Used to get the image to incompass the whole width of the webpage */
     width: 100%;
  
-    object-fit: cover;
-    display: block;
+  
+}
+/* Stylings For Sub Pages*/
+
+/*About Us*/
+ body#aboutus .mainText {
+    align-items: start;
+    margin-left: 20px;
+}
+
+body#aboutus .mainTextChild1{
+    align-items: start;
+}
+/*CONTACT US*/
+
+body#contactus .mainTextChild1 {
+    width: auto;
+    padding: 10px;
+    margin: 30px;
+    
+}
+
+body#contactus .mainTextChild1 H1 {
+    font-size: 55px;
+}
+
+body#contactus .mainTextChild2 {
+    padding: 25px;
 }
 
 
+.mainTextChild2 input, textarea{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
 
+.mainTextChild2 button{
+    width: 100%;
+}
 
 /*styling the recommendations*/
 
@@ -83,106 +114,29 @@ main {
 
 /* Ensure temple and beach items are visible */
 .temple, .beach {
-  background-color: white;
-  padding: 15px;
-  margin-bottom: 10px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  display: block;  /* Make sure they are displayed */
-  margin: 10px 0;
-  text-align: center;
-}
-
-.temple img, .beach img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-
-.temple h3, .beach h3 {
-  font-size: 18px;
-  margin-top: 10px;
-}
-
-.temple p, .beach p {
-  font-size: 14px;
-  color: #555;
-}
-
- 
-/* Stylings For Sub Pages*/
-
-/*About Us*/
-
-.aboutusH1{
-    position: absolute;
-    top: 20%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 54px;
-    background: rgba(0, 0, 0, 0.5); /* Optional: Adds a background for readability */
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-.aboutusP{
-    position: absolute;
-    top: 40%;
-    left: 38.5%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 20px;
-    background: rgba(0, 0, 0, 0.5); /* Optional: Adds a background for readability */
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-.ourTeam{
-    position: absolute;
-    top: 72%;
-    left: 26.5%;
-    transform: translate(-50%, -50%);
-    color: white;
-    background: rgba(0, 0, 0, 0.5); /* Optional: Adds a background for readability */
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-.ourTeam H2{
-    font-size: 40px;
-}
-
-/*CONTACT US*/
-
-.contactusH1{
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 54px;
-    background: rgba(0, 0, 0, 0.5); /* Optional: Adds a background for readability */
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-.contactField{
-    position: absolute;
-    top: 54%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 30px;
-    background: rgba(0, 0, 0, 0.5); /* Optional: Adds a background for readability */
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-.contactField input, textarea{
-    font-size: 25px;
-}
-
-.contactField button{
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: block;  /* Make sure they are displayed */
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  .temple img, .beach img {
     width: 100%;
-}
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .temple h3, .beach h3 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .temple p, .beach p {
+    font-size: 14px;
+    color: #555;
+  }
+  
