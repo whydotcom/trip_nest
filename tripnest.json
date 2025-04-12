@@ -6,12 +6,12 @@
       "cities": [
         {
           "name": "Sydney, Australia",
-          "imageUrl": "/10.jpg",
+          "imagesrc": "10.jpg",
           "description": "A vibrant city known for its iconic landmarks like the Sydney Opera House and Sydney Harbour Bridge."
         },
         {
           "name": "Melbourne, Australia",
-          "imageUrl": "/9.jpg",
+          "imagesrc": "/9.jpg",
           "description": "A cultural hub famous for its art, food, and diverse neighborhoods."
         }
       ]
@@ -22,7 +22,7 @@
       "cities": [
         {
           "name": "Tokyo, Japan",
-          "imageUrl": "/8.jpg",
+          "imagesrc": "/8.jpg",
           "description": "A bustling metropolis blending tradition and modernity, famous for its cherry blossoms and rich culture."
         },
         {

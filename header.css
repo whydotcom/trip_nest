@@ -52,18 +52,31 @@ header{
     margin-right: 10px;
 }
 
-.RightNav button{
-    color: rgb(222, 214, 214);
-    background-color: #545454;
+
+.rightNav button{
+    background-color: rgb(222, 214, 214);
+    color: #0d0d0d;
     border-radius: 20px;
 
 }
 
-/*styles for sub pages
+#recommendations {
+ 
+  position: absolute;
+  top: 62px;
+  right: 381px;
 
-ABOUT US*/
+  background: rgb(255, 255, 255); /* Optional: Adds a background for readability */
+  padding: 4px 4px;
+  border-radius: 50px;
 
-.centerNavAboutUs{
+  z-index: 10;
+
+}
+
+/*styles for sub pages*/
+
+.centerNavSubPage{
   display: flex;
   align-items: center;
   gap: 17px;
