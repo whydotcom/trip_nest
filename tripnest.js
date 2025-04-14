@@ -31,12 +31,17 @@ function searchCountries() {
           // Show the country name
           recommendationDiv.innerHTML += `<h2>${countries.name}</h2>`;
    
+          countries.cities.forEach(city => {
+            const cityImage = city.imagesrc || city.imageUrl || '';
 
-          // Show the image (limited width so it's not too big)
-          recommendationDiv.innerHTML += `<img src="${countries.imagesrc}" alt="${countries.name}" style="max-width: 200px;">`;
-
-          // Show the description text
-          recommendationDiv.innerHTML += `<p><strong>Description:</strong> ${countries.description}</p>`;
+            recommendationDiv.innerHTML += `
+              <div style="margin-bottom: 20px;">
+                <h3>${city.name}</h3>
+                ${cityImage ? `<img src="${cityImage}" alt="${city.name}" style="max-width: 200px;">` : ''}
+                <p>${city.description}</p>
+              </div>
+            `;
+          });
         });
       } else {
         // If nothing matched, tell the user
